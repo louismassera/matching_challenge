@@ -288,4 +288,4 @@ def get_matches(locu_train_path, foursquare_train_path, matches_train_path, locu
 
 	df_matches_test = all_in_test_filter[Y_pred == 1][['id_x', 'id_y']].reset_index(drop=True)
 	df_matches_test.rename(columns={'id_x': 'locu_id', 'id_y': 'foursquare_id'}, inplace=True)
-	df_matches_test.to_csv('matches_test.csv', index=False)
+	df_matches_test.to_csv('data/matches_test.csv', index=False)
